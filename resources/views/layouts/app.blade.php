@@ -12,6 +12,8 @@
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
 
+    @yield('scripts')
+
     <!-- Font Roboto -->
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
 
@@ -25,6 +27,7 @@
     <!-- Light-Bootstrap -->
     <link rel="stylesheet" href="{{asset('css/light-bootstrap-dashboard.css')}}">
 
+    @yield('links')
 
 </head>
 <body>
