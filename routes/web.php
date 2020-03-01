@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\TopicController;
+use App\Http\Controllers\TagController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -21,3 +22,5 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 
 Route::resource('/topics',TopicController::class);
+
+Route::resource('/tags', TagController::class);
