@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\TopicController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -18,3 +19,5 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::resource('/topics',TopicController::class);
