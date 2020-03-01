@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\TopicController;
 use App\Http\Controllers\TagController;
+use App\Http\Controllers\PostController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -24,3 +25,5 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::resource('/topics',TopicController::class);
 
 Route::resource('/tags', TagController::class);
+
+Route::resource('/posts', PostController::class);
