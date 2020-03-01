@@ -9,5 +9,5 @@ class PostContent extends Model
 {
     use SoftDeletes;
 
-    protected $fillable = ['id','id_post','id_content_type','content','order'];
+    protected $fillable = ['id','id_post','id_content_type','content','language','order'];
 }
